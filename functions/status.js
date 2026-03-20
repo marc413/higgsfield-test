@@ -13,7 +13,7 @@ exports.handler = async function(event) {
   }
 
   const authHeader = `Key ${keyId}:${keySecret}`;
-  const BASE = 'https://api.higgsfield.ai';
+  const BASE = 'https://cloud.higgsfield.ai';
 
   try {
     const res = await fetch(`${BASE}/requests/${requestId}/status`, {
